@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body >
+      <section class="heading">
+       <header>
+        <div class="topnav" id="topnavID">
+             <a href="index.html" class="home">Home</a>
+             <a href="aboutus.html" class="about">About Us</a>
+            <a href="donate.html" class="Donate">Donate</a>
+            <a href="mailto:abhiobliges@gmail.com" class="contact">Contact</a>
+            
+            <a href="javascript:void(0)" class="options" onclick="myfunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </header>
+        <div class="title">
+        <h1 class="title" style="text-align: center">DIABETES PREDICTOR</h1>
+        </div>
+         </section>
+        <div class="form-group"  > == $0
+<br><input class="form"  type="number" name="pregnancies" placeholder="No. of Pregnancies eg. 0">
+<br>
+<input class="form" type="number" name="glucose" placeholder="Glucose (mg/dL) eg. 80">
+<br>
+<input class="form" type="number" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80">
+<br>
+<input class="form" type="number" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80">
+<br>
+<input class="form" type="number" name="bmi" placeholder="Body Mass Index (kg/m2) eg. 23.1">
+<br>
+<input class="form" type="number" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52">
+<br>
+<input class="form"  id="txt" onkeyup="manage(this)" type="number" name="age" placeholder="Age (years) eg. 34">
+<br><br><br>
+            <a href="result.html"><button id="btSubmit" type="submit" class="btn btn-primary" disabled>Predict</button></a>
+</div>
+        <script>
+            function myfunction(){
+                var x=document.getElementById("topnavID");
+                if(x.className==="topnav"){
+                    x.className+="responsive";
+                }
+                else{
+                    x.className="topnav";
+                }
+                
+            }
+        </script>
+        
+    
+        <script>
+    function manage(txt) {
+        var bt = document.getElementById('btSubmit');
+        if (txt.value != '') {
+            bt.disabled = false;
+        }
+        else {
+            bt.disabled = true;
+        }
+    }
+        </script>
+        </section>
+        <script src="resources/js/script.js"></script>
+               </body>
+    
+</html>
